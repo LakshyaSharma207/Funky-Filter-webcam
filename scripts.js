@@ -111,6 +111,7 @@ function grayscaleEffect(pixels) {
     return pixels;
 }
 
+// change pixelSize for custom strength of pixelation effect
 function pixelateEffect(pixels, pixelSize = 5) {
     for (let y = 0; y < pixels.height; y += pixelSize) {
         for (let x = 0; x < pixels.width; x += pixelSize) {
