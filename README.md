@@ -4,7 +4,10 @@ Mix and Match Different Filters, be it B&W + Pixel or RGB-split + B&W
 
 # How to run project
 
-Download nodejs installer from here: https://nodejs.org/en/download
+Try visiting this link: https://lakshyasharma207.github.io/Funky-Filter-webcam/
+
+Alternatively for running it on your own computer, 
+<br>Download nodejs installer from here: https://nodejs.org/en/download
 
 Then follow the steps to install nodejs. Clone this repository to any folder
 
