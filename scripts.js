@@ -32,40 +32,44 @@ function paintToCanvas() {
   canvas.width = width;
   canvas.height = height;
 
-  return setInterval(() => {
+  function draw() {
     ctx.drawImage(video, 0, 0, width, height);
     // take the pixels out
     let pixels = ctx.getImageData(0, 0, width, height);
-    // mess with them
+    
+    // changed setInterval to requestAnimationFrame for smoother animation loops
     appliedFilters.forEach(filter => {
-    switch (filter) {
+      switch (filter) {
         case 'red':
           // Apply red filter logic
           pixels = redEffect(pixels);
           break;
-    
+
         case 'rgb':
           // Apply RGB filter logic
           pixels = rgbSplit(pixels);
           break;
-    
+
         case 'grayscale':
           // Apply black&white filter logic
           pixels = grayscaleEffect(pixels);
           break;
-        
+
         case 'pixel':
           // Apply pixel filter logic
           pixels = pixelateEffect(pixels);
           break;
-        
+
         default:
-            break;
+          break;
       }
     });
     // put them back
     ctx.putImageData(pixels, 0, 0);
-  }, 16);
+    requestAnimationFrame(draw);
+  }
+
+  draw(); // initiate the first frame
 }
 
 function takePhoto() {
