@@ -1,4 +1,4 @@
-My version of a project from Javascript30: Project-19 Webcam Fun
+My version of a project from Javascript30: Project-19 Webcam Fun. I have used requestAnimationFrame for smoother animation and added more interactive filters!!
 
 Mix and Match Different Filters, be it B&W + Pixel or RGB-split + B&W
 
