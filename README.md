@@ -8,7 +8,7 @@ Download nodejs installer from here: https://nodejs.org/en/download
 
 Then follow the steps to install nodejs. Clone this repository to any folder
 
-After installing open you terminal and type inside the folder/directory - 
+After installing open your terminal inside the folder/directory and type - 
 
 ```npm install```
 
