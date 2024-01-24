@@ -1,5 +1,5 @@
 My version of a project from Javascript30: Project-19 Webcam Fun. I have used requestAnimationFrame for smoother animation and added more interactive filters!!
-Link to his repo: https://github.com/wesbos/JavaScript30
+<br>Link to his repo: https://github.com/wesbos/JavaScript30
 
 Mix and Match Different Filters, be it B&W + Pixel or RGB-split + B&W
 
